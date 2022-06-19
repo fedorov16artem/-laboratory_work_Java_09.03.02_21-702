@@ -1,9 +1,9 @@
 package Laboratory4;
 
 public class award extends Army {
-	private String title;// награды
-    private int Amount;// сумма надбавки
-    private int prize;// премия
+	private String title;// РЅР°РіСЂР°РґС‹
+    private int Amount;// СЃСѓРјРјР° РЅР°РґР±Р°РІРєРё
+    private int prize;// РїСЂРµРјРёСЏ
 
     public award(String rote, String famili, String zvanie, String DR,  String Data, String chast, String title, int amount,int prize) {
         super(rote, famili, zvanie, DR, Data, chast);
@@ -11,36 +11,36 @@ public class award extends Army {
         this.Amount = amount;
         this.prize = prize;
     }
-//Метод для получения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
     public String gettitle() {
         return title;
     }
-//Метод для изменения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
     public void settitle(String title) {
         this.title = title;
     }
-//Метод для получения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
     public int getamount() {
         return Amount;
     }
-//Метод для изменения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
     public void setamount(int amount) {
         this.Amount = amount;
     }
-//Метод для получения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
     public int getprize() {
         return prize;
     }
-//Метод для изменения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
     public void setpize(int prize) {
         this.prize = prize;
     }
-// Переопределенный стандартный метод для представления объекта в виде строке с более подробной информацией 
+// РџРµСЂРµРѕРїСЂРµРґРµР»РµРЅРЅС‹Р№ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏ РѕР±СЉРµРєС‚Р° РІ РІРёРґРµ СЃС‚СЂРѕРєРµ СЃ Р±РѕР»РµРµ РїРѕРґСЂРѕР±РЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРµР№ 
     public String toString() {
         return "\n" + super.toString() +
-                "\nНаграды: " + title +
-                "\nСумма надбавки: " + Amount+
-                "\nПремия: " + prize;
+                "\nРќР°РіСЂР°РґС‹: " + title +
+                "\nРЎСѓРјРјР° РЅР°РґР±Р°РІРєРё: " + Amount+
+                "\nРџСЂРµРјРёСЏ: " + prize;
     }
 
 }

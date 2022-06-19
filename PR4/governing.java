@@ -2,10 +2,10 @@ package Laboratory4;
 
 public class governing extends Army {
 
-    private String dogovor; // период договра
-    private String datadog; // дата договра
-    private int nomerprot; // номер протокола
-    private int sumzp; // сумма зарплаты
+    private String dogovor; // РїРµСЂРёРѕРґ РґРѕРіРѕРІСЂР°
+    private String datadog; // РґР°С‚Р° РґРѕРіРѕРІСЂР°
+    private int nomerprot; // РЅРѕРјРµСЂ РїСЂРѕС‚РѕРєРѕР»Р°
+    private int sumzp; // СЃСѓРјРјР° Р·Р°СЂРїР»Р°С‚С‹
 
     public governing(String rote, String famili, String zvanie, String DR, String Data, String chast, String dogovor,String datadog,int nomerprot, int sumzp) {
         super(rote, famili, zvanie, DR, Data, chast);
@@ -17,45 +17,45 @@ public class governing extends Army {
     }
         
 
-//Метод для получения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
     public String getDogovor() {
 		return dogovor;
 	}
-//Метод для изменения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public void setDogovor(String dogovor) {
 		this.dogovor = dogovor;
 	}
-//Метод для получения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public String getDatadog() {
 		return datadog;
 	}
-//Метод для изменения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public void setDatadog(String datadog) {
 		this.datadog = datadog;
 	}
-//Метод для получения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public int getNomerprot() {
 		return nomerprot;
 	}
-//Метод для изменения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public void setNomerprot(int nomerprot) {
 		this.nomerprot = nomerprot;
 	}
-//Метод для получения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public int getSumzp() {
 		return sumzp;
 	}
-//Метод для изменения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public void setSumzp(int sumzp) {
 		this.sumzp = sumzp;
 	}
-//Переопределенный стандартный метод для представления объекта в виде строке с более подробной информацией
+//РџРµСЂРµРѕРїСЂРµРґРµР»РµРЅРЅС‹Р№ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏ РѕР±СЉРµРєС‚Р° РІ РІРёРґРµ СЃС‚СЂРѕРєРµ СЃ Р±РѕР»РµРµ РїРѕРґСЂРѕР±РЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРµР№
 	public String toString() {
         return "\n" + super.toString() +
-                "\nПериод договора: " + dogovor +
-                "\nДата договра: " + datadog +
-                "\nНомер протокола:" +nomerprot+
-                "\nСумма зарплаты:" +sumzp;
+                "\nРџРµСЂРёРѕРґ РґРѕРіРѕРІРѕСЂР°: " + dogovor +
+                "\nР”Р°С‚Р° РґРѕРіРѕРІСЂР°: " + datadog +
+                "\nРќРѕРјРµСЂ РїСЂРѕС‚РѕРєРѕР»Р°:" +nomerprot+
+                "\nРЎСѓРјРјР° Р·Р°СЂРїР»Р°С‚С‹:" +sumzp;
     }
 
 }

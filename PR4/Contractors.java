@@ -1,10 +1,10 @@
 package Laboratory4;
 
 public class Contractors extends Army {
-	private String okrug; //название округа
-	private int visluga; // выслыга лет
-	private String dolznost; // должность
-	private int amount; //сумма надбавки
+	private String okrug; //РЅР°Р·РІР°РЅРёРµ РѕРєСЂСѓРіР°
+	private int visluga; // РІС‹СЃР»С‹РіР° Р»РµС‚
+	private String dolznost; // РґРѕР»Р¶РЅРѕСЃС‚СЊ
+	private int amount; //СЃСѓРјРјР° РЅР°РґР±Р°РІРєРё
 
 	public Contractors(String rote, String famili, String zvanie, String DR, String Data, String chast, String okrug,
 			int visluga, String dolznost, int amount) {
@@ -15,46 +15,46 @@ public class Contractors extends Army {
 		this.amount = amount;
 	}
 
-	//Метод для получения значения атрибута
+	//РњРµС‚РѕРґ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public String getokrug() {
 		return okrug;
 	}
-//Метод для изменения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public void setokrug(String okrug) {
 		this.okrug = okrug;
 	}
-//Метод для получения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public Integer getvilugas() {
 		return visluga;
 	}
-//Метод для изменения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public void setvisluga(Integer visluga) {
 		this.visluga = visluga;
 	}
 	
-//Метод для получения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public String getDolznost() {
 		return dolznost;
 	}
-//Метод для изменения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public void setDolznost(String dolznost) {
 		this.dolznost = dolznost;
 	}
-//Метод для получения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РїРѕР»СѓС‡РµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public int getAmount() {
 		return amount;
 	}
-//Метод для изменения значения атрибута
+//РњРµС‚РѕРґ РґР»СЏ РёР·РјРµРЅРµРЅРёСЏ Р·РЅР°С‡РµРЅРёСЏ Р°С‚СЂРёР±СѓС‚Р°
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
-//Переопределенный стандартный метод для представления объекта в виде строке с более подробной информацией
+//РџРµСЂРµРѕРїСЂРµРґРµР»РµРЅРЅС‹Р№ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏ РѕР±СЉРµРєС‚Р° РІ РІРёРґРµ СЃС‚СЂРѕРєРµ СЃ Р±РѕР»РµРµ РїРѕРґСЂРѕР±РЅРѕР№ РёРЅС„РѕСЂРјР°С†РёРµР№
 	public String toString() {
 		 return "\n" + super.toString() +
-	                "\nНазвание округа: " + okrug +
-	                "\nСумма надбавки: " + amount+
-	                "\nВыслуга лет: " + visluga+
-	                "\nДолжность:" + dolznost;
+	                "\nРќР°Р·РІР°РЅРёРµ РѕРєСЂСѓРіР°: " + okrug +
+	                "\nРЎСѓРјРјР° РЅР°РґР±Р°РІРєРё: " + amount+
+	                "\nР’С‹СЃР»СѓРіР° Р»РµС‚: " + visluga+
+	                "\nР”РѕР»Р¶РЅРѕСЃС‚СЊ:" + dolznost;
 	    }
 	}
 

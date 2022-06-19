@@ -1,21 +1,21 @@
 package Laboratory4;
 
-import java.util.ArrayList;//Класс для работы со списками (динамическими массивами) 
+import java.util.ArrayList;//РљР»Р°СЃСЃ РґР»СЏ СЂР°Р±РѕС‚С‹ СЃРѕ СЃРїРёСЃРєР°РјРё (РґРёРЅР°РјРёС‡РµСЃРєРёРјРё РјР°СЃСЃРёРІР°РјРё) 
 
 public class accounting {
 	private ArrayList<Army> listOfArmy;
 
-//Метод хранения списка Военнослужащих 
+//РњРµС‚РѕРґ С…СЂР°РЅРµРЅРёСЏ СЃРїРёСЃРєР° Р’РѕРµРЅРЅРѕСЃР»СѓР¶Р°С‰РёС… 
 	public accounting(ArrayList<Army> listOfArmy) {
 		this.listOfArmy = listOfArmy;
 	}
 	
-//Метод добавления нового Военногослужащего 
+//РњРµС‚РѕРґ РґРѕР±Р°РІР»РµРЅРёСЏ РЅРѕРІРѕРіРѕ Р’РѕРµРЅРЅРѕРіРѕСЃР»СѓР¶Р°С‰РµРіРѕ 
 	public void addArmy(Army Laboratory4, ArrayList<Army> listOfArmys) {
 		listOfArmys.add(Laboratory4);
 	}
 	
-//Метод печати списка Военослужащих 
+//РњРµС‚РѕРґ РїРµС‡Р°С‚Рё СЃРїРёСЃРєР° Р’РѕРµРЅРѕСЃР»СѓР¶Р°С‰РёС… 
 	public ArrayList<Army> printArmy() {
 		return listOfArmy;
 	}
@@ -24,33 +24,33 @@ public class accounting {
 		ArrayList<Army> listOfArmy = new ArrayList<>();
 		accounting accounting = new accounting(listOfArmy);
 		
-		String famili = "Федоров"; // фамилия
-		String rote = "РС(КО)"; //рота
-	    String zvanie = "Младший Сержант"; // звание
-	    String DR = "21.02.2000"; // дата рождения
-	  	String Data = "06.07.2020"; // дата поступления на службу
-	  	String chast = "25801"; // часть
+		String famili = "Р¤РµРґРѕСЂРѕРІ"; // С„Р°РјРёР»РёСЏ
+		String rote = "Р РЎ(РљРћ)"; //СЂРѕС‚Р°
+	    String zvanie = "РњР»Р°РґС€РёР№ РЎРµСЂР¶Р°РЅС‚"; // Р·РІР°РЅРёРµ
+	    String DR = "21.02.2000"; // РґР°С‚Р° СЂРѕР¶РґРµРЅРёСЏ
+	  	String Data = "06.07.2020"; // РґР°С‚Р° РїРѕСЃС‚СѓРїР»РµРЅРёСЏ РЅР° СЃР»СѓР¶Р±Сѓ
+	  	String chast = "25801"; // С‡Р°СЃС‚СЊ
 	    
-	    String okrug = "Западный военный округ";//Округ
-		int visluga = 2; //Выслуга лет
-		String dolznost= "Командир отделения"; //Должность военослужащего
-		int amount = 10000; //Сумма надбавки
-		Contractors contractors = new Contractors(famili,rote,zvanie,DR,Data,chast,okrug,visluga,dolznost,amount);//объект класса
-		accounting.addArmy(contractors, listOfArmy);//Метод добавления
+	    String okrug = "Р—Р°РїР°РґРЅС‹Р№ РІРѕРµРЅРЅС‹Р№ РѕРєСЂСѓРі";//РћРєСЂСѓРі
+		int visluga = 2; //Р’С‹СЃР»СѓРіР° Р»РµС‚
+		String dolznost= "РљРѕРјР°РЅРґРёСЂ РѕС‚РґРµР»РµРЅРёСЏ"; //Р”РѕР»Р¶РЅРѕСЃС‚СЊ РІРѕРµРЅРѕСЃР»СѓР¶Р°С‰РµРіРѕ
+		int amount = 10000; //РЎСѓРјРјР° РЅР°РґР±Р°РІРєРё
+		Contractors contractors = new Contractors(famili,rote,zvanie,DR,Data,chast,okrug,visluga,dolznost,amount);//РѕР±СЉРµРєС‚ РєР»Р°СЃСЃР°
+		accounting.addArmy(contractors, listOfArmy);//РњРµС‚РѕРґ РґРѕР±Р°РІР»РµРЅРёСЏ
 		
-		String  title= "За безупречную службу"; //Название награды
-		int Amount = 15000; //Премия
-		int prize = 10000; //Сумма надбавки
-		award award = new award(famili,rote ,zvanie ,DR ,Data ,chast,title,Amount,prize);//Объект класса			
-		accounting.addArmy(award, listOfArmy);//Метод добавления
+		String  title= "Р—Р° Р±РµР·СѓРїСЂРµС‡РЅСѓСЋ СЃР»СѓР¶Р±Сѓ"; //РќР°Р·РІР°РЅРёРµ РЅР°РіСЂР°РґС‹
+		int Amount = 15000; //РџСЂРµРјРёСЏ
+		int prize = 10000; //РЎСѓРјРјР° РЅР°РґР±Р°РІРєРё
+		award award = new award(famili,rote ,zvanie ,DR ,Data ,chast,title,Amount,prize);//РћР±СЉРµРєС‚ РєР»Р°СЃСЃР°			
+		accounting.addArmy(award, listOfArmy);//РњРµС‚РѕРґ РґРѕР±Р°РІР»РµРЅРёСЏ
 		
-		String  dogovor = "20.07.2020-21.07.2023";//Пероид договор
-		String datadog = "19.07.2020";//Дата договора
-		int  nomerprot = 234124;//Номер протокола
-		int  sumzp = 32702;//Сумма зарплаты
-		governing governing = new governing(famili,rote ,zvanie ,DR ,Data,chast,dogovor,datadog, nomerprot,sumzp);// объект класса
+		String  dogovor = "20.07.2020-21.07.2023";//РџРµСЂРѕРёРґ РґРѕРіРѕРІРѕСЂ
+		String datadog = "19.07.2020";//Р”Р°С‚Р° РґРѕРіРѕРІРѕСЂР°
+		int  nomerprot = 234124;//РќРѕРјРµСЂ РїСЂРѕС‚РѕРєРѕР»Р°
+		int  sumzp = 32702;//РЎСѓРјРјР° Р·Р°СЂРїР»Р°С‚С‹
+		governing governing = new governing(famili,rote ,zvanie ,DR ,Data,chast,dogovor,datadog, nomerprot,sumzp);// РѕР±СЉРµРєС‚ РєР»Р°СЃСЃР°
 			
-		accounting.addArmy(governing, listOfArmy);// метод добавления
+		accounting.addArmy(governing, listOfArmy);// РјРµС‚РѕРґ РґРѕР±Р°РІР»РµРЅРёСЏ
 		
 		System.out.print(accounting.printArmy());
 	}
