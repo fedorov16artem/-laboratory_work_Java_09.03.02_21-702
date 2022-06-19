@@ -1,13 +1,13 @@
-package laba4;
+package Laboratory4;
 
 public class Army {
-	private String famili;
-    private int rote;
-    private String zvanie;
-    private String DR;
-    private String Data;
-    private String chast;
-    public Army(int rote, String famili, String zvanie, String DR, String data, String chast)
+	private String famili; // фамилия
+    private String rote; //рота
+    private String zvanie; // звание
+    private String DR; // дата рождения
+    private String Data; // дата поступления на службу
+    private String chast; // часть
+    public Army(String famili, String rote, String zvanie, String DR, String Data, String chast)
     {
         this.famili = famili; // Фамилия
         this.rote = rote; // Рота
@@ -17,68 +17,56 @@ public class Army {
         this.chast = chast; // Часть
     }
 
-	//Метод для получения значения атрибута
-    public int getRote(){
 //Метод для получения значения атрибута
+    public String getRote(){
         return rote;
     }
-//Метод для получения значения атрибута
-    public void setRote(int rote) {	
-//Метод для получения значения атрибута    	
+//Метод для изменения значения атрибута
+    public void setRote(String rote) {	   	
         this.rote = rote;
     }
 //Метод для получения значения атрибута
     public String getDR() {
-//Метод для получения значения атрибута
         return DR;
     }
-//Метод для получения значения атрибута
+//Метод для изменения значения атрибута
     public void setDR(String DR) {
-//Метод для получения значения атрибута
         this.DR = DR;
     }
 //Метод для получения значения атрибута
     public String getFamili() {
-//Метод для получения значения атрибута
         return famili;
     }
-//Метод для получения значения атрибута
+//Метод для изменеия значения атрибута
     public void setFamili(String famili) {
-//Метод для получения значения атрибута
         this.famili = famili;
     }
 //Метод для получения значения атрибута
     public String getData() {
-//Метод для получения значения атрибута
         return Data;
     }
-//Метод для получения значения атрибута
+//Метод для изменения значения атрибута
     public void setData(String data) {
-//Метод для получения значения атрибута
         Data = data;
     }
 //Метод для получения значения атрибута
     public String getZvan() {
-//Метод для получения значения атрибута
         return zvanie;
     }
-//Метод для получения значения атрибута
+//Метод для изменения значения атрибута
     public void setZvanie(String zvanie) {
-//Метод для получения значения атрибута
         this.zvanie = zvanie;
     }
 //Метод для получения значения атрибута
     public String getChast() {
-//Метод для получения значения атрибута
         return chast;
     }
-//Метод для получения значения атрибута
+//Метод для изменения значения атрибута
     public void setChast(String chast) {
-//Метод для получения значения атрибута
         this.chast = chast;
     }
 //Переопределенный стандартный метод для представления объекта в виде строке с более подробной информацией
     public String toString() {
-    	return " Familia: " + famili + ";\n Rota: " + rote + ";\n Zvanie: "+zvanie+";\n Data rozhdenia: "+DR+";\n Data poctyplenia na clyzhby: "+Data+";\n Chact: "+chast+"."; 
+    	return "Фамилия:" + famili + ";\nРота: " + rote + ";\nЗвание: "+zvanie+";\nДата рождения: "+DR+";\nДата поступления на службу: "+Data+";\nЧасть: "+chast+"."; 
     }
 }
